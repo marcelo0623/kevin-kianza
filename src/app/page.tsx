@@ -32,41 +32,51 @@ export default async function Home() {
 
   return (
     <div className="space-y-24 pb-24">
-      
-     {/* SECTION HERO AVEC IMAGE D'ARRIÈRE-PLAN */}
-      <section className="relative text-white py-32 px-4 flex flex-col items-center justify-center text-center overflow-hidden min-h-[60vh]">
-        {/* Balise optimisée pour charger l'image locale sur Vercel */}
-        <Image 
-          src="/hero-bg.jpg" 
-          alt="Arrière-plan Kevin Kianza"
-          fill
-          priority
-          unoptimized
-          className="object-cover -z-10"
-        />
+    {/* SECTION HERO AVEC IMAGE D'ARRIÈRE-PLAN */}
+      <section className="relative text-white py-40 px-4 flex flex-col items-center justify-center text-center overflow-hidden min-h-[85vh]">
         
-        {/* Dégradé sombre pour garantir la lisibilité du texte */}
-        <div className="absolute inset-0 bg-gradient-to-b from-stone-950/40 via-stone-950/50 to-stone-50/10 -z-10" />
+        {/* 1. L'image de fond avec effet de zoom et ajustement pro */}
+        <div className="absolute inset-0 w-full h-full scale-105 select-none pointer-events-none">
+          <Image 
+            src="/hero-bg.jpg" 
+            alt="Arrière-plan Kevin Kianza"
+            fill
+            priority
+            unoptimized
+            className="object-cover z-0 brightness-[0.85] contrast-[1.05]"
+            style={{ objectPosition: "center 25%" }} // Ajuste si tu veux centrer plus haut/bas sur le visage
+          />
+        </div>
         
-        <div className="relative z-10 max-w-3xl space-y-6">
-          <span className="text-amber-400 uppercase tracking-widest text-sm font-semibold drop-shadow">
+        {/* 2. Superposition de dégradés cinématiques (Overlay Pro) */}
+        {/* Dégradé du haut (sombre pour le menu) et du bas (fondu doux vers la section blanche) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-50 via-stone-950/40 to-stone-950/70 z-10 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-stone-50 z-10" />
+        
+        {/* 3. Le contenu textuel (z-20) avec des ombres portées plus douces */}
+        <div className="relative z-20 max-w-3xl space-y-6 mt-8">
+          <span className="text-amber-400 uppercase tracking-[0.25em] text-xs font-bold bg-amber-500/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-amber-500/20 inline-block animate-pulse">
             Nouvel Album Disponible
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight font-serif drop-shadow-md">
+          
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight font-serif drop-shadow-[0_8px_30px_rgba(0,0,0,0.5)] bg-clip-text bg-gradient-to-r from-white via-stone-100 to-stone-300">
             Mon Ancre, Ma Forteresse
           </h1>
-          <p className="text-lg text-stone-200 max-w-xl mx-auto drop-shadow">
+          
+          <p className="text-lg md:text-xl text-stone-200/90 max-w-xl mx-auto font-medium drop-shadow-md leading-relaxed">
             Découvrez le voyage musical de {siteInfo?.artistName || "Kevin Kianza"} au cœur de la louange et de l&apos;adoration.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
-            <a href="#musique" className="bg-amber-600 hover:bg-amber-700 text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition shadow-lg border border-amber-500/20">
-              <Play size={18} fill="currentColor" /> Écouter l&apos;Album
+          
+          <div className="flex flex-wrap justify-center gap-4 pt-6">
+            <a href="#musique" className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white font-semibold px-8 py-4 rounded-full flex items-center gap-2 transition-all duration-300 shadow-[0_10px_20px_rgba(217,119,6,0.3)] hover:shadow-[0_10px_25px_rgba(217,119,6,0.5)] hover:-translate-y-0.5 border border-amber-500/30 text-sm tracking-wide">
+              <Play size={16} fill="currentColor" /> Écouter l&apos;Album
             </a>
-            <a href="#agenda" className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-full flex items-center gap-2 transition shadow-md">
-              <Calendar size={18} /> Voir les dates
+            <a href="#agenda" className="bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 text-white font-medium px-8 py-4 rounded-full flex items-center gap-2 transition-all duration-300 shadow-md hover:-translate-y-0.5 text-sm tracking-wide">
+              <Calendar size={16} /> Voir les dates
             </a>
           </div>
         </div>
+
       </section>
 
       {/* SECTION BIO / À PROPOS */}
