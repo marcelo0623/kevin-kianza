@@ -78,13 +78,13 @@ export default async function Home() {
             <div className="absolute -inset-2 bg-gradient-to-r from-amber-600 to-amber-700 rounded-2xl opacity-20 blur-lg group-hover:opacity-30 transition duration-300"></div>
             
             <div className="relative overflow-hidden rounded-2xl border border-stone-200 shadow-md aspect-[4/5] md:aspect-[3/4]">
-              <Image 
-                src={siteInfo?.aboutImage ? urlFor(siteInfo.aboutImage).url() : "/kkkkk.jpg"} 
-                alt="Kevin Kianza - Artiste Gospel" 
-                fill
-                unoptimized
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              />
+            <Image 
+            src={siteInfo?.aboutImage ? urlFor(siteInfo.aboutImage).url() : "/kkkkk.JPG"} // .JPG en majuscules ici
+            alt="Kevin Kianza - Artiste Gospel" 
+            fill
+            unoptimized
+            className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
             </div>
           </div>  
 
