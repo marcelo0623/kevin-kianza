@@ -37,7 +37,7 @@ export default async function Home() {
       <section className="relative text-white py-32 px-4 flex flex-col items-center justify-center text-center overflow-hidden min-h-[60vh]">
         {/* Balise optimisée pour charger l'image locale sur Vercel */}
         <Image 
-          src="/hero-bg.jpg" 
+          src="/kkk.JPG" 
           alt="Arrière-plan Kevin Kianza"
           fill
           priority
