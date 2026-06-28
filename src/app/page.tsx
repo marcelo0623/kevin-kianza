@@ -35,9 +35,9 @@ export default async function Home() {
       
      {/* SECTION HERO AVEC IMAGE D'ARRIÈRE-PLAN */}
       <section className="relative text-white py-32 px-4 flex flex-col items-center justify-center text-center overflow-hidden min-h-[60vh]">
-        {/* Image de fond gérée proprement via Sanity ou fallback local */}
+        {/* Balise optimisée pour charger l'image locale sur Vercel */}
         <Image 
-          src={siteInfo?.heroBackground ? urlFor(siteInfo.heroBackground).url() : "/kks.jpg"} 
+          src="/kks.jpg" 
           alt="Arrière-plan Kevin Kianza"
           fill
           priority
@@ -45,7 +45,7 @@ export default async function Home() {
           className="object-cover -z-10"
         />
         
-        {/* Dégradé sombre pour la lisibilité du texte */}
+        {/* Dégradé sombre pour garantir la lisibilité du texte */}
         <div className="absolute inset-0 bg-gradient-to-b from-stone-950/40 via-stone-950/50 to-stone-50/10 -z-10" />
         
         <div className="relative z-10 max-w-3xl space-y-6">
