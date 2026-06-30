@@ -113,8 +113,12 @@ export default async function Home() {
               ) : (
                 <>
                   <p>
-                    Depuis plus de 10 ans, Kevin Kianza partage sa foi et son amour à travers le chant gospel. 
-                    Sa musique est un pont jeté entre le cœur des hommes et la présence divine.
+                   **Consolais** est un artiste gospel, auteur-compositeur et serviteur de Dieu originaire de la République Démocratique du Congo.
+
+                  Depuis le début de sa carrière musicale en 2022, il met son talent au service de lÉvangile afin de partager lamour, la grâce et lespérance de Jésus-Christ à travers la musique. Ayant accepté Jésus-Christ comme Seigneur et Sauveur, il a choisi de consacrer sa vie et son ministère à ladoration et à la proclamation de la Parole de Dieu.
+
+                  À travers ses chants, Consolais souhaite toucher les cœurs, fortifier la foi des croyants et conduire les âmes vers une relation plus profonde avec Dieu. Sa mission est simple : glorifier Dieu et annoncer la Bonne Nouvelle au monde entier par la musique.
+
                   </p>
                   <p>
                     Porté par une profonde dévotion, son ministère musical touche les cœurs et restaure les âmes.
