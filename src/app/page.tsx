@@ -107,30 +107,31 @@ export default async function Home() {
               <div className="w-12 h-1 bg-amber-600 rounded"></div>
             </div>
             
-            <div className="space-y-4 text-stone-600 leading-relaxed">
-              {siteInfo?.bio ? (
-                <p className="whitespace-pre-line">{siteInfo.bio}</p>
-              ) : (
-                <>
-                  <p>
-                   **Consolais** est un artiste gospel, auteur-compositeur et serviteur de Dieu originaire de la République Démocratique du Congo.
-
-                  Depuis le début de sa carrière musicale en 2022, il met son talent au service de lÉvangile afin de partager lamour, la grâce et lespérance de Jésus-Christ à travers la musique. Ayant accepté Jésus-Christ comme Seigneur et Sauveur, il a choisi de consacrer sa vie et son ministère à ladoration et à la proclamation de la Parole de Dieu.
-
-                  À travers ses chants, Consolais souhaite toucher les cœurs, fortifier la foi des croyants et conduire les âmes vers une relation plus profonde avec Dieu. Sa mission est simple : glorifier Dieu et annoncer la Bonne Nouvelle au monde entier par la musique.
-
-                  </p>
-                  <p>
-                    Porté par une profonde dévotion, son ministère musical touche les cœurs et restaure les âmes.
-                  </p>
-                </>
-              )}
-            </div>
-            
-            <div className="pt-2">
-              <p className="font-serif italic text-amber-700 font-medium text-lg">À Dieu soit la gloire.</p>
-            </div>
+       <div className="space-y-4 text-stone-600 leading-relaxed">
+            {siteInfo?.bio ? (
+              <p className="whitespace-pre-line">{siteInfo.bio}</p>
+            ) : (
+              <>
+                <p>
+                  Kevin Kianza est un artiste gospel, auteur-compositeur et serviteur de Dieu originaire de la République Démocratique du Congo.
+                </p>
+                <p>
+                  Depuis le début de sa carrière musicale en 2022, il met son talent au service de l&apos;Évangile afin de partager l&apos;amour, la grâce et l&apos;espérance de Jésus-Christ à travers la musique. Ayant accepté Jésus-Christ comme Seigneur et Sauveur, il a choisi de consacrer sa vie et son ministère à l&apos;adoration et à la proclamation de la Parole de Dieu.
+                </p>
+                <p>
+                  À travers ses chants, il souhaite toucher les cœurs, fortifier la foi des croyants et conduire les âmes vers une relation plus profonde avec Dieu. Sa mission est simple : glorifier Dieu et annoncer la Bonne Nouvelle au monde entier par la musique.
+                </p>
+                <p>
+                  Porté par une profonde dévotion, son ministère musical touche les cœurs et restaure les âmes.
+                </p>
+              </>
+            )}
           </div>
+          
+          <div className="pt-2">
+            <p className="font-serif italic text-amber-700 font-medium text-lg">À Dieu soit la gloire.</p>
+          </div>
+        </div>
 
         </div>
       </section>
