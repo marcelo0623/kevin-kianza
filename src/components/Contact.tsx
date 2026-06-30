@@ -114,7 +114,7 @@ export default function Contact() {
 
           {/* WHATSAPP AVEC FAWHATSAPP */}
 <a 
-  href="https://wa.me/243000000000" 
+  href="https://wa.me/+243824115317" 
   target="_blank" 
   rel="noopener noreferrer"
   className="flex items-center gap-4 p-4 bg-white rounded-xl border border-stone-200/80 shadow-sm hover:border-emerald-500/20 hover:shadow-md transition group text-left"
