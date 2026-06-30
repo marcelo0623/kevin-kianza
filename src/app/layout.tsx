@@ -29,7 +29,8 @@ export default function RootLayout({
         <footer className="bg-stone-900 text-stone-400 py-8 border-t border-stone-800">
           <div className="max-w-6xl mx-auto px-4 text-center text-sm">
             <p>&copy; {new Date().getFullYear()} Kevin Kianza. Tous droits réservés.</p>
-            <p className="mt-2 text-xs text-stone-500">Propulsé par la foi & Next.js</p>
+            <p className="mt-2 text-xs text-stone-500">Powered by Marcelo Dimi © 2026
+</p>
           </div>
         </footer>
 
